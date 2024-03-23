@@ -28,7 +28,7 @@ self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
         return
     end
 
-    if(not inventory.HasIngredient(ingredientToAdd)) then
+    if(not inventory.NeedsIngredient(ingredientToAdd)) then
         print("does not need ingredient")
         return
     end

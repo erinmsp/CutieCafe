@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Recipe
+  - AvatarSpawn
   layers:
   - Default
   - TransparentFX

@@ -71,26 +71,34 @@ namespace Highrise.Studio.Generated
             Undo.RecordObjects(parents, "Add Lua");
         }
 
+        [MenuItem("Component/Lua/Billboard Script")]
+        private static void AddComponent1() => AddScript("Assets/Scripts/BillboardScript.lua");
+        [MenuItem("Component/Lua/Fountain Script")]
+        private static void AddComponent2() => AddScript("Assets/Scripts/FountainScript.lua");
+        [MenuItem("Component/Lua/Hide On Tap")]
+        private static void AddComponent3() => AddScript("Assets/Scripts/HideOnTap.lua");
         [MenuItem("Component/Lua/Ingredient Point Script")]
-        private static void AddComponent1() => AddScript("Assets/Scripts/IngredientPointScript.lua");
+        private static void AddComponent4() => AddScript("Assets/Scripts/IngredientPointScript.lua");
         [MenuItem("Component/Lua/Ingredient Script")]
-        private static void AddComponent2() => AddScript("Assets/Scripts/IngredientScript.lua");
+        private static void AddComponent5() => AddScript("Assets/Scripts/IngredientScript.lua");
         [MenuItem("Component/Lua/Ingredient UI Script")]
-        private static void AddComponent3() => AddScript("Assets/Scripts/IngredientUIScript.lua");
+        private static void AddComponent6() => AddScript("Assets/Scripts/IngredientUIScript.lua");
         [MenuItem("Component/Lua/Inventory Attach Script")]
-        private static void AddComponent4() => AddScript("Assets/Scripts/InventoryAttachScript.lua");
+        private static void AddComponent7() => AddScript("Assets/Scripts/InventoryAttachScript.lua");
         [MenuItem("Component/Lua/Player Inventory Script")]
-        private static void AddComponent5() => AddScript("Assets/Scripts/PlayerInventoryScript.lua");
+        private static void AddComponent8() => AddScript("Assets/Scripts/PlayerInventoryScript.lua");
         [MenuItem("Component/Lua/Recipe Script")]
-        private static void AddComponent6() => AddScript("Assets/Scripts/RecipeScript.lua");
+        private static void AddComponent9() => AddScript("Assets/Scripts/RecipeScript.lua");
         [MenuItem("Component/Lua/Recipe Station Script")]
-        private static void AddComponent7() => AddScript("Assets/Scripts/RecipeStationScript.lua");
+        private static void AddComponent10() => AddScript("Assets/Scripts/RecipeStationScript.lua");
+        [MenuItem("Component/Lua/Recipe Turn In Script")]
+        private static void AddComponent11() => AddScript("Assets/Scripts/RecipeTurnInScript.lua");
         [MenuItem("Component/Lua/Recipe UI Script")]
-        private static void AddComponent8() => AddScript("Assets/Scripts/RecipeUIScript.lua");
+        private static void AddComponent12() => AddScript("Assets/Scripts/RecipeUIScript.lua");
         [MenuItem("Component/Lua/Highrise Camera Controller")]
-        private static void AddComponent9() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/HighriseCameraController.lua");
+        private static void AddComponent13() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/HighriseCameraController.lua");
         [MenuItem("Component/Lua/RTS Camera")]
-        private static void AddComponent10() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/RTSCamera.lua");
+        private static void AddComponent14() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/RTSCamera.lua");
 
     }
 }

@@ -48,6 +48,23 @@ function HasIngredient(ingredient) : boolean
     return recipe.GetIngredient1Material() == ingredient or recipe.GetIngredient2Material() == ingredient or recipe.GetIngredient3Material() == ingredient;
 end
 
+function NeedsIngredient(ingredient) : boolean
+    if(not HasRecipe())then
+        return false
+    end
+
+    local recipe = currentRecipe:GetComponent("RecipeScript")
+    if(ingredient == recipe.GetIngredient1Material())then
+        return not Ingredient1Complete()
+    elseif(ingredient == recipe.GetIngredient2Material())then
+        return not Ingredient2Complete()
+    elseif(ingredient == recipe.GetIngredient3Material())then
+        return not Ingredient3Complete()
+    end
+
+    return false
+end
+
 function Ingredient1Complete() : boolean
     if(not HasRecipe())then
         return false
@@ -88,6 +105,8 @@ function CompleteRecipe()
 
     currentRecipe = nil
     UpdateUI()
+
+    client.mainCamera:GetComponent("RecipeUIScript").ShowFinalNote()
 end
 
 function UpdateUI()
