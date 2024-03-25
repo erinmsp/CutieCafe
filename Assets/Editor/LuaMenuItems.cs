@@ -95,10 +95,12 @@ namespace Highrise.Studio.Generated
         private static void AddComponent11() => AddScript("Assets/Scripts/RecipeTurnInScript.lua");
         [MenuItem("Component/Lua/Recipe UI Script")]
         private static void AddComponent12() => AddScript("Assets/Scripts/RecipeUIScript.lua");
+        [MenuItem("Component/Lua/Chat Handler")]
+        private static void AddComponent13() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/ChatHandler.lua");
         [MenuItem("Component/Lua/Highrise Camera Controller")]
-        private static void AddComponent13() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/HighriseCameraController.lua");
+        private static void AddComponent14() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/HighriseCameraController.lua");
         [MenuItem("Component/Lua/RTS Camera")]
-        private static void AddComponent14() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/RTSCamera.lua");
+        private static void AddComponent15() => AddScript("Packages/com.pz.studio/Assets/Game/Lua/RTSCamera.lua");
 
     }
 }
