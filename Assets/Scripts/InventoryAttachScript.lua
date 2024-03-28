@@ -1,8 +1,8 @@
 --!SerializeField
 local scriptToAttach : LuaScript = nil
 
-client.PlayerConnected:Connect(function(player)
-    player.CharacterInstantiated:Connect(function(player, character)
-        character.gameObject:AddScript(scriptToAttach);
+scene.PlayerJoined:Connect(function(scene, player)
+    player.CharacterChanged:Connect(function(player, newCharacter, oldCharacter)
+        newCharacter.gameObject:AddScript(scriptToAttach);
     end)
 end)
