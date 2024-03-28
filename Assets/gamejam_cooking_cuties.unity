@@ -28960,10 +28960,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _networkId: 0
   _script: {fileID: -974389366465450183, guid: 9801e00d9da1d0a45ad53fb0e4c225ab, type: 3}
-  _properties: []
+  _properties:
+  - Property: {fileID: -5615247665813041735, guid: 9801e00d9da1d0a45ad53fb0e4c225ab,
+      type: 3}
+    Value:
+      rid: 2954585192713158659
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2954585192713158659
+      type: {class: AudioSourceGlue/AudioSourceLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 0}
 --- !u!114 &822969193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60720,7 +60729,7 @@ MonoBehaviour:
       type: {class: AudioSourceGlue/AudioSourceLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
-        _value: {fileID: 0}
+        _value: {fileID: 843405894}
 --- !u!114 &1512683789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66373,7 +66382,7 @@ MonoBehaviour:
       type: {class: AudioSourceGlue/AudioSourceLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
-        _value: {fileID: 0}
+        _value: {fileID: 843405894}
 --- !u!114 &1817856840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67557,10 +67566,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _networkId: 0
   _script: {fileID: -974389366465450183, guid: b603839263c6ab346bc72130170426de, type: 3}
-  _properties: []
+  _properties:
+  - Property: {fileID: -5615247665813041735, guid: b603839263c6ab346bc72130170426de,
+      type: 3}
+    Value:
+      rid: 2954585192713158658
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2954585192713158658
+      type: {class: AudioSourceGlue/AudioSourceLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 0}
 --- !u!114 &1911199676
 MonoBehaviour:
   m_ObjectHideFlags: 0
