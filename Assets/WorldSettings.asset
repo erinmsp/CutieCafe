@@ -15,7 +15,15 @@ MonoBehaviour:
   _publishedId: 
   _playerCharacterController: 1
   _playerCharacterSpawner: 1
+  _chatHandler: 1
   _worldScripts: []
   _layers: []
-  _tags: []
-  _builtInScripts: []
+  _tags:
+  - World: Recipe
+    Client: UserTag1
+  - World: AvatarSpawn
+    Client: UserTag2
+  _builtInScripts:
+  - {fileID: -974389366465450183, guid: f301225243efa27479ec38fb4dd5ffab, type: 3}
+  - {fileID: -974389366465450183, guid: 88de721fb90843944b4f498ca102c1b3, type: 3}
+  - {fileID: -974389366465450183, guid: 9f704bff1826b43a3834478cd1499710, type: 3}
