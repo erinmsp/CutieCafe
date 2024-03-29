@@ -1,5 +1,5 @@
 --!SerializeField
-local soundToPlay : AudioSource = nil
+local soundToPlay : AudioShader = nil
 
 --!SerializeField
 local inventoryObject : GameObject = nil
@@ -23,7 +23,7 @@ self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
     end
 
     if(soundToPlay ~= nil) then
-        soundToPlay:Play()
+        Audio:PlayShader(soundToPlay)
     end
 
     local chosenRecipe = recipes[math.random(#recipes)]

@@ -2,7 +2,7 @@
 local inventoryObject : GameObject = nil
 
 --!SerializeField
-local soundToPlay : AudioSource = nil
+local soundToPlay : AudioShader = nil
 
 self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
     local inventory = inventoryObject:GetComponent("PlayerInventoryScript")
@@ -11,7 +11,7 @@ self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
     end
 
     if(soundToPlay ~= nil) then
-        soundToPlay:Play()
+        Audio:PlayShader(soundToPlay)
     end
 
     inventory.CompleteRecipe()

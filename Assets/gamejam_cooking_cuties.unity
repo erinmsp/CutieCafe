@@ -28980,20 +28980,20 @@ MonoBehaviour:
   - Property: {fileID: -5615247665813041735, guid: 9801e00d9da1d0a45ad53fb0e4c225ab,
       type: 3}
     Value:
-      rid: 2954585192713158659
+      rid: 2954585215744344069
   references:
     version: 2
     RefIds:
-    - rid: 2954585192713158659
-      type: {class: AudioSourceGlue/AudioSourceLuaPropertyValue, ns: Highrise.Lua.Glue,
-        asm: com.pz.highrise.lua.glue}
-      data:
-        _value: {fileID: 0}
     - rid: 2954585214800101382
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
         _value: {fileID: 39704253}
+    - rid: 2954585215744344069
+      type: {class: AudioShaderGlue/AudioShaderLuaPropertyValue, ns: Highrise.Lua.Glue,
+        asm: com.pz.highrise.lua.glue}
+      data:
+        _value: {fileID: 11400000, guid: 351116f090325a94b975cfb492c30e61, type: 2}
 --- !u!114 &822969193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67669,20 +67669,20 @@ MonoBehaviour:
   - Property: {fileID: -5615247665813041735, guid: b603839263c6ab346bc72130170426de,
       type: 3}
     Value:
-      rid: 2954585192713158658
+      rid: 2954585215744344067
   - Property: {fileID: 7554232020041989029, guid: b603839263c6ab346bc72130170426de,
       type: 3}
     Value:
-      rid: 2954585214800101376
+      rid: 2954585215744344068
   references:
     version: 2
     RefIds:
-    - rid: 2954585192713158658
-      type: {class: AudioSourceGlue/AudioSourceLuaPropertyValue, ns: Highrise.Lua.Glue,
+    - rid: 2954585215744344067
+      type: {class: AudioShaderGlue/AudioShaderLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
-        _value: {fileID: 0}
-    - rid: 2954585214800101376
+        _value: {fileID: 11400000, guid: 32581463cf9971a49a28845a6cf7a35d, type: 2}
+    - rid: 2954585215744344068
       type: {class: GameObjectGlue/GameObjectLuaPropertyValue, ns: Highrise.Lua.Glue,
         asm: com.pz.highrise.lua.glue}
       data:
