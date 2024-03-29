@@ -1,4 +1,7 @@
 --!SerializeField
+local inventoryObject : GameObject = nil
+
+--!SerializeField
 local emoteToPlay : string = nil
 
 --!SerializeField
@@ -12,7 +15,7 @@ function OnEmoteComplete()
 end
 
 function AddIngredient()
-    client.localPlayer.character:GetComponent("PlayerInventoryScript").AddIngredient(ingredientToAdd)
+    inventoryObject:GetComponent("PlayerInventoryScript").AddIngredient(ingredientToAdd)
 
     if(soundToPlay ~= nil) then
         soundToPlay:Play()
@@ -22,7 +25,7 @@ end
 self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
     print("Tapped")
 
-    local inventory = client.localPlayer.character:GetComponent("PlayerInventoryScript")
+    local inventory = inventoryObject:GetComponent("PlayerInventoryScript")
     if(inventory.IsComplete()) then
         print("complete")
         return

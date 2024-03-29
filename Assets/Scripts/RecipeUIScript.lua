@@ -19,6 +19,11 @@ local ingredient3 : GameObject = nil
 --!SerializeField
 local finalNote : GameObject = nil
 
+function self:Start()
+    root:SetActive(false)
+    finalNote:SetActive(false) 
+end
+
 function UpdateUI(recipeGO, count1, count2, count3)
     if(recipeGO == nil) then
         root:SetActive(false)
