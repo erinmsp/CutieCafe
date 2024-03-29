@@ -13,7 +13,6 @@ function Client()
 
     self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
         if(occupied.value) then
-            print("occupied")
             return
         end
 
@@ -40,7 +39,6 @@ function Client()
 
     client.localPlayer.CharacterChanged:Connect(function(player, newCharacter, oldCharacter)
         newCharacter.StateChanged:Connect(function(newState, oldState)
-            print(newState)
             if(occupant == client.localPlayer and (newState == 5 or newState == 4)) then
                 occupant = nil
                 leaveRequest:FireServer(client.localPlayer) 
@@ -55,11 +53,9 @@ function Server()
 
     sitRequest:Connect(function(player : Player)
         if(occupied.value) then
-            print("occupied")
             return
         end
 
-        print(player.name .. " is sitting")
         occupant = player
         occupied.value = true
         
@@ -68,15 +64,12 @@ function Server()
 
     leaveRequest:Connect(function(player : Player)
         if(not occupied.value) then
-            print("not occupied")
             return
         end
 
         if(occupant ~= player) then
-            print("not occupant")
         end
 
-        print(player.name .. " is leaving")
         occupant = nil
         occupied.value = false
 
@@ -86,6 +79,15 @@ function Server()
     scene.PlayerJoined:Connect(function(scene, player)
         if(occupant ~= nil) then
             sitEvent:FireAllClients(occupant)
+        end
+    end)
+
+    scene.PlayerLeft:Connect(function(scene, player)
+        if(occupant ~= nil and occupant == player) then
+            occupant = nil
+            occupied.value = false
+
+            leaveEvent:FireAllClients(player)
         end
     end)
 end
