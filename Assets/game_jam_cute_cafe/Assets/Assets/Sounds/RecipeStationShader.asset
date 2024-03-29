@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: -189348351, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3}
   m_Name: RecipeStationShader
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: c71cad127d4228e499b7584ecfe3b34c, type: 3}
+  - {fileID: 8300000, guid: 0f759840ef8cd9947af3a1b7c59b187a, type: 3}
+  - {fileID: 8300000, guid: 9c57a23cf0692dd49bfae5085072010e, type: 3}
+  - {fileID: 8300000, guid: c43991d4c98e2f84d85c37df2d2d5d86, type: 3}
+  - {fileID: 8300000, guid: e5ad14699d38b5847892841887d87b43, type: 3}
+  - {fileID: 8300000, guid: 2515f9492a7a8ff4db2199dd8b2dda8e, type: 3}
   volume: 1
   randomVolume: 0
   pitch: 1
