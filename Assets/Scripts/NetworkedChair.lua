@@ -4,11 +4,12 @@ local sitTransform : Transform = nil
 local sitRequest = Event.new("SitRequest")
 local sitEvent = Event.new("SitEvent")
 local leaveRequest = Event.new("LeaveRequest")
+local leaveEvent = Event.new("LeaveEvent")
 
 local occupied : BoolValue = BoolValue.new("Occupied", false)
 
 function Client()
-    local localPlayerSitting : boolean
+    local occupant
 
     self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
         if(occupied.value) then
@@ -23,17 +24,25 @@ function Client()
     end
 
     sitEvent:Connect(function(player : Player)
-        localPlayerSitting = player == client.localPlayer
+        if(player == occupant) then
+            return
+        end
+
+        occupant = player
         player.character:PlayEmote("sit-idle", true, OnSitComplete)
         player.character.transform.position = sitTransform.position
         player.character.transform.rotation = sitTransform.rotation
     end)
 
+    leaveEvent:Connect(function(player : Player)
+        occupant = nil
+    end)
+
     client.localPlayer.CharacterChanged:Connect(function(player, newCharacter, oldCharacter)
         newCharacter.StateChanged:Connect(function(newState, oldState)
             print(newState)
-            if(localPlayerSitting and (newState == 5 or newState == 4)) then
-                localPlayerSitting = false
+            if(occupant == client.localPlayer and (newState == 5 or newState == 4)) then
+                occupant = nil
                 leaveRequest:FireServer(client.localPlayer) 
             end
         end)
@@ -70,6 +79,14 @@ function Server()
         print(player.name .. " is leaving")
         occupant = nil
         occupied.value = false
+
+        leaveEvent:FireAllClients(player)
+    end)
+
+    scene.PlayerJoined:Connect(function(scene, player)
+        if(occupant ~= nil) then
+            sitEvent:FireAllClients(occupant)
+        end
     end)
 end
 
