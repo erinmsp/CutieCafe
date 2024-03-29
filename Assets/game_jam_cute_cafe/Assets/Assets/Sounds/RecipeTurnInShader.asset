@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: -189348351, guid: 30a4c7dce0b6891478396efa6bd2a6d0, type: 3}
   m_Name: RecipeTurnInShader
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: 337782d13416cd246a55e3715d5a5566, type: 3}
+  - {fileID: 8300000, guid: 2682390939a0cc9428f13b38cedb6048, type: 3}
+  - {fileID: 8300000, guid: 8b35dc0b50f75254a9e2a513b38b8dd8, type: 3}
+  - {fileID: 8300000, guid: 500621ec89a1b2d4a80d9b7aeadca081, type: 3}
+  - {fileID: 8300000, guid: 9b9b074a11151f64b843f82ee9b13d93, type: 3}
+  - {fileID: 8300000, guid: 56c9f99d25f717a47bfabef1ce5741cc, type: 3}
   volume: 1
   randomVolume: 0
   pitch: 1
