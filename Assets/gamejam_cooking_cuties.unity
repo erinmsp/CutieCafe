@@ -17817,7 +17817,7 @@ GameObject:
   - component: {fileID: 423521321}
   m_Layer: 0
   m_Name: CarrotCakeRecipe
-  m_TagString: Recipe
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27887,7 +27887,7 @@ GameObject:
   - component: {fileID: 718332750}
   m_Layer: 0
   m_Name: BobaRecipe
-  m_TagString: Recipe
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30097,7 +30097,7 @@ GameObject:
   - component: {fileID: 883930985}
   m_Layer: 0
   m_Name: LatteRecipe
-  m_TagString: Recipe
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60894,7 +60894,7 @@ GameObject:
   - component: {fileID: 1503938067}
   m_Layer: 0
   m_Name: RollCakeRecipe
-  m_TagString: Recipe
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

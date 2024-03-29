@@ -8,7 +8,8 @@ local recipes = nil
 
 self.gameObject:GetComponent(TapHandler).Tapped:Connect(function()
     if(recipes == nil)then
-        recipes = GameObject.FindGameObjectsWithTag("Recipe")
+        -- a hack until custom tags work again, using default "Respawn" tag instead of custom "Recipe" tag
+        recipes = GameObject.FindGameObjectsWithTag("Respawn")
     end
 
     local inventory = inventoryObject:GetComponent("PlayerInventoryScript")
